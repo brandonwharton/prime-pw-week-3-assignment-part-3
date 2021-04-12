@@ -4,6 +4,10 @@ body {
   background: darkblue;
 }
 
-h1,  h2{
+h1,  h2 {
   color: white;
+}
+
+ol li {
+  color: lightgrey;
 }
