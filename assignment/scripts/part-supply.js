@@ -39,9 +39,7 @@ for (i=0; i<supplyChanges.length; i++) {
   if (supplyChanges[i] > 0) {
     console.log(`Added ${supplyChanges[i]} parts.`);
   } // Setting the condition for positive values
-  else if (supplyChanges[i] === 0) {
-  } // Setting the condition for value of 0 to do nothing.
-  else {
+  else if (supplyChanges[i] < 0) {
     console.log(`Part count ${supplyChanges[i]}.`);
   } // Setting the condition for negative values
 }
@@ -54,9 +52,7 @@ for (supplies of supplyChanges) {
   if (supplies > 0) {
     console.log('Added', supplies, 'parts.');
   } // Setting the condition for positive values
-  else if (supplies === 0) {
-  } // Another blank code block for value of 0
-  else {
+  else if (supplies < 0) {
     console.log('Part count '+ supplies + '.');
   } // Setting the condition for negative values with different string syntax
 }
@@ -67,10 +63,8 @@ let j = 0;
 while (j < supplyChanges.length) {
   if (supplyChanges[j] > 0) {
     console.log(`Added ${supplyChanges[j]} parts.`);
-  } // Condition for positive values
-  else if (supplyChanges[j] === 0) {
-  } // Condition for value of 0
-  else {
+  } // Condition for positive values having decided I like backticks best
+  else  if (supplyChanges[j] < 0) {
     console.log(`Part count ${supplyChanges[j]}.`);
   } // Condition for negative values
   j++; // Remembering to iterate the while loop INSIDE of the main code block. Learned
