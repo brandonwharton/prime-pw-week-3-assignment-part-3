@@ -59,12 +59,12 @@ for (supplies of supplyChanges) {
 
 // 8. Rewrite the `for` loop from #6 as a `while` loop.
 console.log('8. Showing supplyChanges with "while" loop');
-let j = 0;
+let j = 0; // Setting an new iterator variable outside of the while loop
 while (j < supplyChanges.length) {
   if (supplyChanges[j] > 0) {
     console.log(`Added ${supplyChanges[j]} parts.`);
   } // Condition for positive values having decided I like backticks best
-  else  if (supplyChanges[j] < 0) {
+  else if (supplyChanges[j] < 0) {
     console.log(`Part count ${supplyChanges[j]}.`);
   } // Condition for negative values
   j++; // Remembering to iterate the while loop INSIDE of the main code block. Learned
@@ -74,8 +74,9 @@ while (j < supplyChanges.length) {
 // 9. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('9. Total supplies available is:');
-let totalSupplies = 0;
+let totalSupplies = 0; // Making an accumulator variable to reference in my loop
 for (i=0; i<supplyChanges.length; i++) {
+// Resetting and adding to my accumulator variable with each iteration
   totalSupplies = totalSupplies + supplyChanges[i];
 }
 console.log(totalSupplies);
